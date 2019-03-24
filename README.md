@@ -6,6 +6,7 @@
 3.docker-compose.ymlがあるディレクトリで、docker-compose upを叩く
 
 ## アプリのディレクトリ構成(予定)
+```
 Project(how-to-use-it)
 ┣mysite
 ┃ ┗（サイト全体の設定とか）
@@ -13,3 +14,4 @@ Project(how-to-use-it)
 　┣login（ログイン機能）
 　┣review（レビュー機能）
 　┗frontEnd（SASSやJSは全部ここにまとめる、コンパイル先はどこがいいかな…？）
+ ```
