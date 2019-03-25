@@ -16,6 +16,9 @@ Project(how-to-use-it)
 ┃ ┗nginx(nginxの設定)
 ┣mysite
 ┃ ┗（サイト全体の設定とか）
+┣static
+┃ ┗admin
+┃   ┗css(ここにscssとか入れるんだっけ？)
 ┗apps(myapp)
 　┣login（ログイン機能）
 　┣review（レビュー機能）
@@ -26,3 +29,6 @@ Project(how-to-use-it)
 ## アプリの設定
 - リクエスト⇔nginx⇔uWSGI⇔Django⇔MySQLと接続が繋がるように設定
 - 8000番ポートで受ける（nginx）→8001番ポートで送受信する（nginx→uWSGI）→Djangoを動かす（uWSGI→Django）って流れ
+
+## 動作確認
+- 動作確認時のポートは http://localhost:8000/myapp （またはDockerマシンのIP:8000） でアクセスし、「Hello, Nginx.」が表示されることを確認する。
