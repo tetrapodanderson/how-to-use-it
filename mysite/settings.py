@@ -85,7 +85,7 @@ DATABASES = {
             'read_default_file': './docker/db/conf/my.cnf',
         },
         'HOST': 'db',
-        'PORT': 3306,
+        'PORT': '3306',
     }
 }
 
