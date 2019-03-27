@@ -30,7 +30,9 @@ Project(how-to-use-it)
 
 ## アプリの設定
 - リクエスト⇔nginx⇔uWSGI⇔Django⇔MySQLと接続が繋がるように設定
-- 8000番ポートで受ける（nginx）→8001番ポートで送受信する（nginx→uWSGI）→Djangoを動かす（uWSGI→Django）って流れ
+- 8000番ポートで受ける（nginx）→8001番ポートで送受信する（nginx→uWSGI）→Djangoを動かす（uWSGI→Django）という流れ
+- MySQLのDocker imageは最新版の8.0を使用
+- MySQLの文字コードと認証方法を設定ファイル（my.cnf）で指定し読み込むように設定
 
 ## 動作確認
 - 動作確認時のポートは http://localhost:8000/myapp （またはDockerマシンのIP:8000） でアクセスし、「Hello, Nginx.」が表示されることを確認する。
