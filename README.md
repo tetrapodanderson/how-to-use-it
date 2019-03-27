@@ -1,9 +1,11 @@
 # スーパーや飲食店などのシステムを紹介するアプリ
 
 ## 環境構築方法
-1.クローンしてDjangoでプロジェクト作成する<br>
-2.docker-compose.ymlがあるディレクトリで、docker-compose buildを叩く(暫定) <br>
-3.docker-compose.ymlがあるディレクトリで、docker-compose upを叩く<br>
+1. クローンしてDjangoでプロジェクト作成する<br>
+2. docker-compose.ymlがあるディレクトリで、docker-compose buildを叩く(暫定) <br>
+3. docker-compose.ymlがあるディレクトリで、ddocker-compose run web python manage.py migrateを叩く<br>
+4. docker-compose.ymlがあるディレクトリで、docker-compose run web python manage.py createsuperuserを叩き管理者ユーザーを作成する<br>
+3. docker-compose.ymlがあるディレクトリで、docker-compose upを叩く<br>
 
 ## アプリ概要
 

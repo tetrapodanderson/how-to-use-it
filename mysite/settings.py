@@ -74,14 +74,18 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sample', #　作成したデータベース名
-        'USER': 'root', # ログインユーザー名
+        'NAME': 'sample',
+        'USER': 'root',
         'PASSWORD': 'password',
+        'OPTIONS': {
+            'read_default_file': './docker/db/conf/my.cnf',
+        },
         'HOST': 'db',
-        'PORT': '3306',
+        'PORT': 3306,
     }
 }
 
