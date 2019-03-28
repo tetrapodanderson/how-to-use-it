@@ -2,10 +2,10 @@
 
 ## 環境構築方法
 1. クローンしてDjangoでプロジェクト作成する<br>
-2. docker-compose.ymlがあるディレクトリで、docker-compose buildを叩く(暫定) <br>
-3. docker-compose.ymlがあるディレクトリで、docker-compose run web python manage.py migrateを叩きマイグレーション（DB環境を移行≒更新）する<br>
-4. docker-compose.ymlがあるディレクトリで、docker-compose run web python manage.py createsuperuserを叩き管理者ユーザーを作成する<br>
-3. docker-compose.ymlがあるディレクトリで、docker-compose upを叩く<br>
+2. docker-compose.ymlがあるディレクトリで、`docker-compose build`を叩く(暫定) <br>
+3. docker-compose.ymlがあるディレクトリで、`docker-compose run web python manage.py migrate`を叩きマイグレーション（DB環境を移行≒更新）する<br>
+4. docker-compose.ymlがあるディレクトリで、`docker-compose run web python manage.py createsuperuser`を叩き管理者ユーザーを作成する<br>
+3. docker-compose.ymlがあるディレクトリで、`docker-compose up`を叩く<br>
 
 ## 動作確認
 - 動作確認は http://localhost:8000/myapp （またはDockerマシンのIP:8000/myapp） でアクセスし、「Hello, World.」が表示されることを確認する
